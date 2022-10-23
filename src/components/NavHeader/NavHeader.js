@@ -33,6 +33,33 @@ const NavHeader = () => {
               Page 2
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to='user/bob'
+              className={({ isActive }) =>
+                isActive ? classes['active-link'] : undefined}
+            >
+              Bob
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to='user/alice'
+              className={({ isActive }) =>
+                isActive ? classes['active-link'] : undefined}
+            >
+              Alice
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to='filter'
+              className={({ isActive }) =>
+                isActive ? classes['active-link'] : undefined}
+            >
+              Filter
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
